@@ -2,7 +2,7 @@ import React from 'react'
 
 function Products() {
   return (
-    <>Products
+    <>
     <section className='Product'>
     <h2>Products</h2>
     <div>Arts</div>
