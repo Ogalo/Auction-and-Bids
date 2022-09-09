@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaHome, FaUser, FaHammer, FaBoxes, FaPhoneAlt } from "react-icons/fa";
+
 
 function Navigation() {
   return (
@@ -9,17 +11,15 @@ function Navigation() {
       </section>
       <section className="Nav-Bar">
       <ul>
-      <li>Home</li>
-      <li>Auction</li>
-      <li>Service</li>
-      <li>Help</li>
+      <li><FaHome /> Home</li>
+      <li><FaHammer />Auction</li>
+      <li><FaBoxes />Service</li>
+      <li><FaPhoneAlt /> Contact Us</li>
       </ul>
       </section>
       <section className="Users">
-      <img />
-      <h2>Harrsion</h2>
-      <p>title</p>
-
+      <FaUser />
+      <p>First Name</p>
       </section>
 
       </header>
