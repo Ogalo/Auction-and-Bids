@@ -1,31 +1,11 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +16,211 @@
     transform: rotate(360deg);
   }
 }
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+  text-decoration: none;
+  overflow: none;
+  margin-right: 20px;
+  background-color: #f5f5f5;
+}
+
+.Nav {
+  background-color: #fdfeff;
+  margin: 10px;
+  align-content: space-between;
+  text-align: left;
+  padding-top: 10px;
+  border-radius: 0 70px;
+
+
+}
+
+.goods{
+  background-color: #f5f5f5;
+  width: 55%;
+  column-width: 60%;
+  text-align: left;
+  padding: 10px;
+  padding-top: 40px;
+  margin: 5px;
+}
+
+.bid{
+  background-color: #fdfeff;
+  margin: 2px;
+  text-align: left;
+  width: 20%;
+  padding: 15px;
+  border-radius: 70px 0;
+
+
+}
+
+.Auction{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Auction-Info{
+  background-color: #fdfeff;
+  margin-right: 30px;
+  width: 200px;
+  text-align: center;
+  align-content: space-between;
+  border-radius: 50px;
+
+}
+
+.Auction{
+  display: none;
+}
+
+.Product{
+  display: block;
+  margin-top: 3px;
+  padding: 5px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.Product div{
+ display: inline-block;
+ grid-template-columns: repeat(2, 2fr);
+ grid-gap: 15px;
+ margin: 15px;
+
+}
+
+.Product h2{
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.Media{
+  padding: 20px;
+}
+.Media-Links{
+  padding-right: 30px;
+
+}
+
+.butt{
+  margin-left: 180px;
+  margin-top: 30px;
+  background-color: #4169E1;
+  padding: 5px;
+  border-radius: 8px;
+  color: #fdfeff;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Activities{
+  margin-top: 250px;
+}
+
+.Users{
+  margin-top: 110px;
+  display: flex;
+  padding: 20px;
+}
+
+.Users .icon{
+  margin-top: 15px;
+  padding-right: 25px;
+}
+
+.Nav-Bar {
+  padding: 25px;
+}
+
+.Nav-Bar h4{
+  padding: 10px;
+  word-spacing: 10px;
+}
+
+.Nav-Bar h4:hover, .Product h3:hover, .Product img:hover,.star:hover,.Media-Links:hover{
+  color: #4169E1;
+}
+
+.butt:hover{
+  background-color: #6276b3;
+}
+
+.image img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.Item{
+  display: flex;
+  /* margin: 150px; */
+  justify-content: space-between;
+}
+
+.Review{
+  margin: 150px;
+  margin-top: 40px;
+  align-items: center center;
+}
+
+.Desc{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+}
+
+.Description{
+  margin-top: 90px;
+}
+
+.Description div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Description p{
+  margin-top: 20px;
+  color: #4169E1;
+}
+
+.Auction-Info{
+  height: 300px;
+  width: 200px;
+  align-content: center;
+}
+
+.Auction-Info button{
+  background-color: #4169E1;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+  color: white;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.Auction-Info button:hover{
+  background-color: #6276b3;
+}
+.Auction-Info div{
+  padding: auto;
+  margin-top: 50px;
+}
+.Auction-Info div p{
+  margin-top: 40px;
+  margin-bottom: -10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Auction-Info div h3{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+

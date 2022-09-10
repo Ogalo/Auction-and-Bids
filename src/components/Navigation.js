@@ -10,15 +10,15 @@ function Navigation() {
       <h1>Auctions and Bids</h1>
       </section>
       <section className="Nav-Bar">
-      <ul>
-      <li><FaHome /> Home</li>
-      <li><FaHammer />Auction</li>
-      <li><FaBoxes />Service</li>
-      <li><FaPhoneAlt /> Contact Us</li>
-      </ul>
+
+      <h4><FaHome /> Home</h4>
+      <h4><FaHammer /> Auction</h4>
+      <h4><FaBoxes /> Service</h4>
+      <h4><FaPhoneAlt /> Contact Us</h4>
+
       </section>
       <section className="Users">
-      <FaUser />
+      <FaUser className='icon' />
       <p>First Name</p>
       </section>
 
