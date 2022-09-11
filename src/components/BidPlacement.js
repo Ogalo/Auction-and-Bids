@@ -7,7 +7,7 @@ function Bid() {
   };
 
   const handleSignIn = () => {
-    alert("Welcome Back!");
+    alert("Bid Successful");
   };
 
   return (
