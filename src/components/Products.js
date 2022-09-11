@@ -5,7 +5,7 @@ import house from '../Images/house2.png'
 import more from '../Images/See more.png'
 function Products() {
   return (
-    <>
+    <div>
     <section className='Product'>
     <h2>Products</h2>
     <div>
@@ -26,7 +26,7 @@ function Products() {
     <h3>Others</h3>
     </div>
     </section>
-    </>
+    </div>
   )
 }
 

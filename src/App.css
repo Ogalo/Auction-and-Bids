@@ -78,12 +78,12 @@
 }
 
 .Auction{
-  display: block;
+  display: none;
 }
 
 .Product{
   position: sticky;
-  display:none;
+  display: block;
   margin-top: 3px;
   padding: 5px;
   margin-left: 35px;
@@ -302,4 +302,3 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
   overflow: scroll;
   text-overflow: ellipsis;
 }
-
