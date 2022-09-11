@@ -1,6 +1,6 @@
 import React from 'react'
 import jaguar from '../Images/1957 Jaguar XKSS.webp'
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaRegClock, FaArrowAltCircleUp, FaHashtag} from "react-icons/fa";
 
 
 function Auction() {
@@ -26,17 +26,32 @@ function Auction() {
     <div className='Desc'>
     <div className='Description'>
     <h2>Information</h2>
-    <div>
-    <h3>Item Name:</h3>
-    <p>condition description</p>
+    <div className='Table'>
+      <table>
+      <tr>
+      <th><FaRegClock/> Time Left :</th>
+      <td>4 hr</td>
+      </tr>
+      <tr>
+      <th><FaArrowAltCircleUp/> High Bid: </th>
+      <td>$ 841</td>
+      </tr>
+      <tr>
+      <th><FaHashtag/> Bids :</th>
+      <td>10</td>
+      </tr>
+      </table>
     </div>
+    <div className='arrange'>
     <div>
-    <h3>Category:</h3>
-    <p>category description</p>
+    <h3>Item Description:</h3>
+    </div>
+    <div className="DescMe">hhhhahhhshhhahhdhhhdh ijjsjfjjjjjjjjjjjjjjdjjajkdakkkkakkkdakkdakkkkakkkadkkdkkd{/*Item description goes here */}</div>
+
     </div>
     <div>
     <h3>Location:</h3>
-    <p>location description</p>
+    <p>Location url</p>
     </div>
     </div>
 

@@ -28,6 +28,7 @@
 }
 
 .Nav {
+  position: sticky;
   background-color: #fdfeff;
   margin: 10px;
   align-content: space-between;
@@ -49,6 +50,7 @@
 }
 
 .bid{
+  position: sticky;
   background-color: #fdfeff;
   margin: 2px;
   text-align: left;
@@ -76,11 +78,12 @@
 }
 
 .Auction{
-  display: none;
+  display: block;
 }
 
 .Product{
-  display:block;
+  position: sticky;
+  display:none;
   margin-top: 3px;
   padding: 5px;
   margin-left: 35px;
@@ -188,6 +191,7 @@
 }
 
 .Auction-Info{
+  position: sticky;
   height: 300px;
   width: 200px;
   align-content: center;
@@ -274,3 +278,28 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
 .formPages{
   display: none;
 }
+
+.Table table{
+  width: 100%;
+
+}
+.arrange{
+  display: inline-flex;
+  align-items: stretch;
+}
+
+.arrange h3{
+  font-size: 18px;
+  margin-right: -5px;
+}
+
+.DescMe{
+  margin-left: -120px;
+  max-width: 300px;
+  max-height:500px;
+  border: 1px solid black;
+  white-space: wrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
