@@ -7,15 +7,8 @@ function SignUp() {
       <section id="signUp" className="page">
         <div className="form">
           <form action="#" id="signUpForm">
-            <span className="closeBtn">
-              <Link to="/">
-                <i className="fas fa-times"></i>
-              </Link>
-            </span>
             <div className="container">
               <h1>Register</h1>
-              <p>Please fill in this form to apply.</p>
-
               <label htmlFor="email">
                 <b>Email</b>
               </label>
@@ -62,7 +55,7 @@ function SignUp() {
               <p>
                 Already have an account?{" "}
                 <a href="/signIn" id="signIn">
-                  Sign in
+                 Log in
                 </a>
                 .
               </p>

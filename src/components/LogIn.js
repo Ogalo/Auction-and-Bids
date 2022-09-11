@@ -1,20 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function SignUp() {
+function SignIn() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const handleSignIn = () => {
+    alert("Welcome Back!");
+  };
+
   return (
     <div>
-      <section id="signUp" className="page">
-        <div className="form">
-          <form action="#" id="signUpForm">
-            <span className="closeBtn">
+      <section className="logInPage" id="logInPage">
+        <div className="logIn">
+          <form onSubmit={handleSubmit}>
+            <span className="closeBtn1">
               <Link to="/">
                 <i className="fas fa-times"></i>
               </Link>
             </span>
-            <div className="container">
-              <h1>Register</h1>
-              <p>Please fill in this form to apply.</p>
+
+            <div className="container2">
+              <h1>Log In</h1>
 
               <label htmlFor="email">
                 <b>Email</b>
@@ -23,7 +31,7 @@ function SignUp() {
                 type="text"
                 placeholder="Enter Email"
                 name="email"
-                id="email"
+                id="email2"
                 required
               />
 
@@ -34,35 +42,25 @@ function SignUp() {
                 type="password"
                 placeholder="Enter Password"
                 name="psw"
-                id="psw"
+                id="psw2"
                 required
               />
 
-              <label htmlFor="psw-repeat">
-                <b>Repeat Password</b>
-              </label>
-              <input
-                type="password"
-                placeholder="Repeat Password"
-                name="psw-repeat"
-                id="psw-repeat"
-                required
-              />
-
-              <p>
-                By creating an account you agree to our{" "}
-                <a href="./Services.js">Terms & Privacy</a>.
-              </p>
-              <button type="submit" className="registerbtn" id="registerbtn">
-                Register
+              <button
+                type="submit"
+                className="registerbtn"
+                onClick={handleSignIn}
+                href="/nijenge-app"
+              >
+                Log In
               </button>
             </div>
 
-            <div className="container-signin">
+            <div className="container signin">
               <p>
-                Already have an account?{" "}
-                <a href="/signIn" id="signIn">
-                  Sign in
+                Don't have an account?{" "}
+                <a href="/signUp" id="butt2">
+                  Sign Up
                 </a>
                 .
               </p>
@@ -74,4 +72,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default SignIn;

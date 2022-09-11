@@ -4,6 +4,7 @@ import Products from './components/Products'
 import Auction from './components/Auction';
 import Bidders from './components/Bidders';
 import Media from './components/Media';
+import SignUp from './components/SignUp';
 function App() {
   return (
     <div>
@@ -21,6 +22,9 @@ function App() {
    </div>
    <div className='Media'>
      <Media />
+     </div>
+     <div>
+     <SignUp />
      </div>
      </div>
 
