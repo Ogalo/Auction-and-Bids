@@ -5,15 +5,15 @@ import Auction from './components/Auction';
 import Bidders from './components/Bidders';
 import Media from './components/Media';
 // import SignUp from './components/SignUp';
-import LogIn from './components/LogIn'
-// import Bid from './components/BidPlacement'
+// import LogIn from './components/LogIn'
+import Bid from './components/BidPlacement'
 // import Sell from './components/Sell'
 function App() {
   return (
     <div>
     <div>
 
-    <LogIn />
+     <Bid />
 
      </div>
    <div className='main'>
