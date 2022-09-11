@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function SignIn() {
+function Bid() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -82,4 +82,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default Bid;

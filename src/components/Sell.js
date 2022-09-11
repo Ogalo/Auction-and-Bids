@@ -1,67 +1,78 @@
-
 import React from "react";
 
 
-function SignUp() {
+function Sell() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const handleAuction = () => {
+    alert("Auctioned Successful");
+  };
+
   return (
     <div>
-      <section id="signUp" className="page">
-        <div className="form">
-          <form action="#" id="signUpForm">
-           <div className="container">
-              <h1>Register</h1>
-              <p>Please fill in this form to apply.</p>
+      <section className="logInPage" id="logInPage">
+        <div className="logIn">
+          <form onSubmit={handleSubmit}>
+            <div className="container2">
+              <h1>Place Bid</h1>
+              <div className="cat">
+              <label for="cars">Category:</label>
+              <select id="" name="" size="">
+                <option value="art">Art</option>
+                <option value="cars">Cars</option>
+                <option value="houses">House</option>
+                <option value="others">Others</option>
+              </select>
+              </div>
+              <br/>
+              <label htmlFor="name">
+              <b>Item Name:</b>
+              </label>
+            <input
+              type="text"
+              placeholder="Item Name"
+              name="name"
+              required
+            />
 
-              <label htmlFor="email">
-                <b>Email</b>
+
+              <label htmlFor="psw">
+                <b>Item Description:</b>
               </label>
               <input
                 type="text"
-                placeholder="Enter Email"
-                name="email"
-                id="email"
+                placeholder="Item Description"
+                name="item"
                 required
               />
-
               <label htmlFor="psw">
-                <b>Password</b>
+              <b>Location:</b>
               </label>
               <input
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                id="psw"
-                required
+              type="url"
+              placeholder="location url"
+              name="location"
+              required
               />
-
-              <label htmlFor="psw-repeat">
-                <b>Repeat Password</b>
+              <label htmlFor="email">
+              <b>Add Photos:</b>
               </label>
               <input
-                type="password"
-                placeholder="Repeat Password"
-                name="psw-repeat"
-                id="psw-repeat"
-                required
+              type="file"
+              required
               />
 
-              <p>
-                By creating an account you agree to our{" "}
-                <a href="./Services.js">Terms & Privacy</a>.
-              </p>
-              <button type="submit" className="registerbtn" id="registerbtn">
-                Register
+
+              <button
+                type="submit"
+                className="registerbtn"
+                onClick={handleAuction}
+                href="/nijenge-app"
+              >
+                POST
               </button>
-            </div>
-
-            <div className="container-signin">
-              <p>
-                Already have an account?{" "}
-                <a href="/signIn" id="signIn">
-                  Sign in
-                </a>
-                .
-              </p>
             </div>
           </form>
         </div>
@@ -70,4 +81,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Sell;

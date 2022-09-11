@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function SignIn() {
+function LogIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -66,4 +66,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default LogIn;
