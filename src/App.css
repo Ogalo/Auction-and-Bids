@@ -240,7 +240,7 @@
 
 
 
-.page{
+.page, .logInPage{
   position:absolute;
   text-align: left;
   background-color: #fdfeff;
