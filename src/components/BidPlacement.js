@@ -1,29 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-function SignUp() {
+
+function SignIn() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const handleSignIn = () => {
+    alert("Welcome Back!");
+  };
+
   return (
     <div>
-      <section id="signUp" className="page">
-        <div className="form">
-          <form action="#" id="signUpForm">
-            <span className="closeBtn">
-              <Link to="/">
-                <i className="fas fa-times"></i>
-              </Link>
-            </span>
-            <div className="container">
-              <h1>Register</h1>
-              <p>Please fill in this form to apply.</p>
-
-              <label htmlFor="email">
-                <b>Email</b>
-              </label>
+      <section className="logInPage" id="logInPage">
+        <div className="logIn">
+          <form onSubmit={handleSubmit}>
+           <div className="container2">
               <input
                 type="text"
-                placeholder="Enter Email"
+                placeholder="Select Category"
                 name="email"
-                id="email"
+                id="email2"
                 required
               />
 
@@ -34,44 +31,24 @@ function SignUp() {
                 type="password"
                 placeholder="Enter Password"
                 name="psw"
-                id="psw"
+                id="psw2"
                 required
               />
 
-              <label htmlFor="psw-repeat">
-                <b>Repeat Password</b>
-              </label>
-              <input
-                type="password"
-                placeholder="Repeat Password"
-                name="psw-repeat"
-                id="psw-repeat"
-                required
-              />
-
-              <p>
-                By creating an account you agree to our{" "}
-                <a href="./Services.js">Terms & Privacy</a>.
-              </p>
-              <button type="submit" className="registerbtn" id="registerbtn">
-                Register
+              <button
+                type="submit"
+                className="registerbtn"
+                onClick={handleSignIn}
+                href="/nijenge-app"
+              >
+                Post
               </button>
             </div>
-
-            <div className="container-signin">
-              <p>
-                Already have an account?{" "}
-                <a href="/signIn" id="signIn">
-                  Sign in
-                </a>
-                .
-              </p>
-            </div>
-          </form>
+           </form>
         </div>
       </section>
     </div>
   );
 }
 
-export default SignUp;
+export default SignIn;

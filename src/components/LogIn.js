@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 function SignIn() {
   const handleSubmit = (e) => {
@@ -15,12 +15,6 @@ function SignIn() {
       <section className="logInPage" id="logInPage">
         <div className="logIn">
           <form onSubmit={handleSubmit}>
-            <span className="closeBtn1">
-              <Link to="/">
-                <i className="fas fa-times"></i>
-              </Link>
-            </span>
-
             <div className="container2">
               <h1>Log In</h1>
 

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 function SignUp() {
   return (
@@ -8,12 +8,7 @@ function SignUp() {
       <section id="signUp" className="page">
         <div className="form">
           <form action="#" id="signUpForm">
-            <span className="closeBtn">
-              <Link to="/">
-                <i className="fas fa-times"></i>
-              </Link>
-            </span>
-            <div className="container">
+           <div className="container">
               <h1>Register</h1>
               <p>Please fill in this form to apply.</p>
 

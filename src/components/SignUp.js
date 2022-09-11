@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 function SignUp() {
   return (
@@ -9,6 +9,7 @@ function SignUp() {
           <form action="#" id="signUpForm">
             <div className="container">
               <h1>Register</h1>
+              <div>
               <label htmlFor="email">
                 <b>Email</b>
               </label>
@@ -19,6 +20,7 @@ function SignUp() {
                 id="email"
                 required
               />
+              </div>
 
               <label htmlFor="psw">
                 <b>Password</b>
