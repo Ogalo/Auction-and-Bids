@@ -347,4 +347,21 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
   color: #4169E1;
 }
 
+.userInfo{
+  display: flex;
+  text-align: left;
+  justify-content: left;
+
+}
+
+.userInfo div h5{
+  padding-left: 30px;
+  margin-top: 28px;
+  color: red
+}
+
+.deleteBid{
+  padding-left: 50px;
+  margin-top: 28px;
+}
 
