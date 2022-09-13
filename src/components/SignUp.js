@@ -2,15 +2,17 @@ import React from "react";
 import {FaTimesCircle  } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function SignUp() {
+function SignUp({open, close}) {
+  if(!open){return null}
+
   return (
     <div>
-      <section id="signUp" className="page">
+      <section id="signUp" className="SignPage">
         <div className="form">
           <form action="#" id="signUpForm">
 
             <div className="container">
-            <Link to='/'><FaTimesCircle className='closeTab'/></Link>
+            <Link to='/'><FaTimesCircle className='closeTab' onClick={close}/></Link>
 
               <h1>Register</h1>
               <div>
@@ -52,7 +54,7 @@ function SignUp() {
                 By creating an account you agree to our{" "}
                 <a href="./Services.js">Terms & Privacy</a>.
               </p>
-              <button type="submit" className="registerbtn" id="registerbtn">
+              <button type="submit" className="registerbtn">
                 Register
               </button>
             </div>

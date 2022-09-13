@@ -73,7 +73,6 @@ function Bid({open, close}) {
                 type="submit"
                 className="registerbtn"
                 onClick={handleBid}
-                href="/"
               >
                 Bid
               </button>
