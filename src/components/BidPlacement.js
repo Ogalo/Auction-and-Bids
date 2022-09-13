@@ -1,21 +1,24 @@
 import React from "react";
+import {FaTimesCircle  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-
-function Bid() {
+function Bid({open, close}) {
+  if(!open){return null}
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
-  const handleSignIn = () => {
+  const handleBid = () => {
     alert("Bid Successful");
   };
 
   return (
     <div>
-      <section className="logInPage" id="logInPage">
-        <div className="logIn">
+    <section className="overlay">
+    <div className="layContainer">
           <form onSubmit={handleSubmit}>
             <div className="container2">
+            <Link to='/'><FaTimesCircle className='closeTab' onClick={close}/></Link>
               <h1>Place Bid</h1>
               <label htmlFor="email">
                 <b>Your Name:</b>
@@ -69,8 +72,8 @@ function Bid() {
               <button
                 type="submit"
                 className="registerbtn"
-                onClick={handleSignIn}
-                href="/nijenge-app"
+                onClick={handleBid}
+                href="/"
               >
                 Bid
               </button>

@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import jaguar from '../Images/1957 Jaguar XKSS.webp'
 import { FaStar, FaRegClock, FaArrowAltCircleUp, FaHashtag} from "react-icons/fa";
+import Bid from './BidPlacement';
 
 
 function Auction() {
+  const[bet, setBet]=useState(false)
+
+
   return (
     <>
     <section className='Auction'>
@@ -46,7 +50,9 @@ function Auction() {
     <div>
     <h3>Item Description:</h3>
     </div>
-    <div className="DescMe">hhhhahhhshhhahhdhhhdh ijjsjfjjjjjjjjjjjjjjdjjajkdakkkkakkkdakkdakkkkakkkadkkdkkd{/*Item description goes here */}</div>
+    <div className="DescMe">5-Speed Manual, 4WD, BMW Turbodiesel Power, U.S. Title
+
+    Morganville, NJ 07751{/*Item description goes here */}</div>
 
     </div>
     <div>
@@ -67,7 +73,8 @@ function Auction() {
     {}
     <p>Price</p>
     <h3>$800</h3>
-    <button>Place Bid</button>
+    <button onClick={()=> setBet(true)}>Place Bid</button>
+    <Bid open={bet} close={()=> setBet(false)}/>
     </div>
     </div>
     </div>

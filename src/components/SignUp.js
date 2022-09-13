@@ -1,5 +1,6 @@
 import React from "react";
-
+import {FaTimesCircle  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
@@ -7,7 +8,10 @@ function SignUp() {
       <section id="signUp" className="page">
         <div className="form">
           <form action="#" id="signUpForm">
+
             <div className="container">
+            <Link to='/'><FaTimesCircle className='closeTab'/></Link>
+
               <h1>Register</h1>
               <div>
               <label htmlFor="email">
