@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaHome, FaUser, FaHammer, FaBoxes, FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 function Navigation() {
@@ -11,10 +12,18 @@ function Navigation() {
       </section>
       <section className="Nav-Bar">
 
-      <h4><FaHome /> Home</h4>
-      <h4><FaHammer /> Auction</h4>
-      <h4><FaBoxes /> Service</h4>
-      <h4><FaPhoneAlt /> Contact Us</h4>
+      <h4><FaHome /><Link to="/">
+      Home
+    </Link></h4>
+      <h4><FaHammer /><Link to="/Auction">
+      Auction
+    </Link></h4>
+      <h4><FaBoxes /><Link to="/main">
+      Top Bid
+    </Link></h4>
+      <h4><FaPhoneAlt /><Link to="">
+      Contact Us
+    </Link></h4>
 
       </section>
       <section className="Users">

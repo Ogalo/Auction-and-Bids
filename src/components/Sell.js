@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {FaTimesCircle  } from "react-icons/fa";
+
 
 
 function Sell() {
@@ -15,6 +18,11 @@ function Sell() {
       <section className="logInPage" id="logInPage">
         <div className="logIn">
           <form onSubmit={handleSubmit}>
+          <span className="closeBtn1">
+           
+            <Link to='/'><FaTimesCircle className='closeTab' /></Link>
+
+          </span>
             <div className="container2">
               <h1>Place Bid</h1>
               <div className="cat">
@@ -69,9 +77,12 @@ function Sell() {
                 type="submit"
                 className="registerbtn"
                 onClick={handleAuction}
-                href="/nijenge-app"
+                href="/"
               >
-                POST
+              <Link to="/">
+              POST
+              </Link>
+
               </button>
             </div>
           </form>

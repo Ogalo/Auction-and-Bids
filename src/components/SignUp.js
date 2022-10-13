@@ -12,7 +12,7 @@ function SignUp({open, close}) {
           <form action="#" id="signUpForm">
 
             <div className="container">
-            <Link to='/'><FaTimesCircle className='closeTab' onClick={close}/></Link>
+            <Link to=''><FaTimesCircle className='closeTab' onClick={close}/></Link>
 
               <h1>Register</h1>
               <div>
@@ -65,7 +65,7 @@ function SignUp({open, close}) {
                 <a href="/signIn" id="signIn">
                  Log in
                 </a>
-                .
+
               </p>
             </div>
           </form>

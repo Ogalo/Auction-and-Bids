@@ -1,5 +1,5 @@
 import Navigation from './Navigation'
-import Auction from './Auction';
+import Products from './Products'
 import Bidders from './Bidders';
 import Media from './Media';
 import SignUp from './SignUp';
@@ -8,7 +8,7 @@ import Bid from './BidPlacement'
 import Sell from './Sell'
 
 
-function Main() {
+function Home() {
   return (
     <div>
     <div className='formPages'>
@@ -22,7 +22,7 @@ function Main() {
       <Navigation />
      </div>
      <div className='goods'>
-      <Auction />
+      <Products />
      </div>
      <div className='bid'>
       <Bidders />
@@ -37,4 +37,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

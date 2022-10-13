@@ -15,8 +15,8 @@ function Bid({open, close}) {
 
   if(!open){return null}
 
-  function handleSubmit(e){
-    e.preventDefault();
+  function handleSubmit(){
+    alert("Bid Successful");
     fetch("http://localhost:9292/bids", {
       method: "POST",
       headers: {
@@ -37,9 +37,6 @@ function Bid({open, close}) {
       });
   }
 
-  const handleBid = () => {
-    alert("Bid Successful");
-  };
 
   return (
     <div>
@@ -47,7 +44,7 @@ function Bid({open, close}) {
     <div className="layContainer">
           <form onSubmit={handleSubmit}>
             <div className="container2">
-            <Link to='/'><FaTimesCircle className='closeTab' onClick={close}/></Link>
+            <Link to=''><FaTimesCircle className='closeTab' onClick={close}/></Link>
               <h1>Place Bid</h1>
               <label>
                 <b>Your Name:</b>
@@ -111,7 +108,6 @@ function Bid({open, close}) {
               <button
                 type="submit"
                 className="registerbtn"
-                onClick={() => {}}
               >
                 Bid
               </button>
