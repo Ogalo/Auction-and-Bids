@@ -86,7 +86,7 @@
 
 .Product{
   position: sticky;
-  display: none;
+  display: block;
   margin-top: 3px;
   padding: 5px;
   margin-left: 35px;
@@ -143,14 +143,20 @@
 
 .Nav-Bar {
   padding: 25px;
+
 }
 
 .Nav-Bar h4{
   padding: 10px;
-  word-spacing: 10px;
+  word-spacing: 5px;
 }
 
-.Nav-Bar h4:hover, .Product h3:hover, .Product img:hover,.star:hover,.Media-Links:hover{
+.Nav-Bar h4 a{
+  text-decoration: none;
+  color: black;
+}
+
+.Nav-Bar h4 a:hover, .Product h3:hover, .Product img:hover,.star:hover,.Media-Links:hover{
   color: #4169E1;
 }
 
