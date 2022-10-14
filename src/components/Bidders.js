@@ -30,11 +30,9 @@ function Bidders() {
     {bidData.map((detail)=>(
       <div className='userInfo' key={detail.id}>
       <div>
-       <h1>{detail.name}</h1>
+       <h1>`${detail.name} $ ${detail.your_bid}`</h1>
       </div>
-      <div>
-       <h5>${detail.your_bid}</h5>
-      </div>
+
       <div className='deleteBid'>
       <FaTimes/>
       </div>
