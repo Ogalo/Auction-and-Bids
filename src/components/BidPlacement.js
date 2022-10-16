@@ -17,7 +17,7 @@ function Bid({open, close}) {
 
   function handleSubmit(){
     alert("Bid Successful");
-    fetch("http://localhost:9292/bids", {
+    fetch("https://arts-bidders.herokuapp.com/bids", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

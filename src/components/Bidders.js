@@ -9,7 +9,7 @@ function Bidders() {
 
 
     useEffect(() => {
-      fetch("http://localhost:9292/bids")
+      fetch("https://arts-bidders.herokuapp.com/bids")
       .then((res)=>res.json())
       .then((data)=>{
         setDetails(data)
